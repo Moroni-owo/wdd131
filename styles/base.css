@@ -1,0 +1,137 @@
+/* Google Fonts */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f6fa;
+  color: #222;
+  margin: 0;
+}
+
+header {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+header span {
+  display: block;
+  font-weight: 600;
+  color: #facc15;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: #111827;
+  padding: 0.5rem 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #facc15;
+}
+
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+
+main h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  color: #111827;
+  margin-top: 1rem;
+}
+
+.card-text {
+  line-height: 1.6;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.profile-pic {
+  display: block;
+  margin: 1rem auto;
+  width: 200px;
+  border-radius: 50%;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+}
+
+ul a {
+  color: #1e3a8a;
+  text-decoration: none;
+}
+
+ul a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 0.5rem 0;
+}
+
+figure {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.card.profile {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.card.profile img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
