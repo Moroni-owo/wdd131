@@ -1,0 +1,127 @@
+/* ==============================
+   GLOBAL STYLES
+   ============================== */
+:root {
+  --primary: #8c6a3c;      
+  --secondary: #c19a6b;    
+  --accent: #e7d7a8;       
+  --text: #2c2c2c;
+  --light: #fffef9;
+  --shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: var(--light);
+  color: var(--text);
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  box-shadow: var(--shadow);
+}
+
+h1, h2 {
+  margin: 0.5rem 0;
+}
+
+/* ==============================
+   HERO IMAGE
+   ============================== */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==============================
+   SECTIONS (Mobile first)
+   ============================== */
+section {
+  background: white;
+  margin: 1rem;
+  padding: 1rem 1.3rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.data h2,
+.weather h2 {
+  text-align: center;
+  color: var(--primary);
+}
+
+.data ul,
+.weather ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 0.3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-icon {
+  width: 60px;
+  display: block;
+  margin: 0.5rem auto;
+}
+
+/* ==============================
+   FOOTER
+   ============================== */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  background: var(--secondary);
+  color: white;
+}
+
+/* ==============================
+   DESKTOP VIEW
+   ============================== */
+@media (min-width: 700px) {
+
+  main {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+  }
+
+  .hero img {
+    max-height: 550px;
+    object-fit: cover;
+  }
+
+  .data {
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    width: 250px;
+  }
+
+  .weather {
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    width: 250px;
+  }
+
+  /* Hide mobile SVG icon */
+  .weather-icon {
+    display: none;
+  }
+
+  /* Weather icon as pseudo-element */
+  .weather h2::after {
+    content: " ⛅";
+    color: var(--primary);
+  }
+}

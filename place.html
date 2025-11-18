@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Machu Picchu - Peru</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Machu Picchu - Peru</h1>
+  </header>
+
+  <main>
+
+    <!-- HERO IMAGE -->
+    <picture class="hero">
+      <source media="(min-width: 700px)" srcset="images/machu-large.jpeg">
+      <img src="images/machu-small.jpeg" alt="Machu Picchu panorama">
+    </picture>
+
+    <!-- DATA SECTION -->
+    <section class="data">
+      <h2>Data</h2>
+      <ul>
+        <li><span>Country:</span> Peru</li>
+        <li><span>Region:</span> Cusco</li>
+        <li><span>Altitude:</span> 2,430 m</li>
+        <li><span>Built:</span> 15th Century</li>
+        <li><span>Civilization:</span> Inca Empire</li>
+        <li><span>UNESCO Status:</span> World Heritage since 1983</li>
+      </ul>
+    </section>
+
+    <!-- WEATHER SECTION -->
+    <section class="weather">
+      <h2>Weather</h2>
+
+      <!-- ICON FOR MOBILE (SVG) -->
+      <img src="images/cloud-sun.png" alt="Weather Icon" class="weather-icon">
+
+      <ul>
+        <li><span>Temperature:</span> <span id="temp">8</span> °C</li>
+        <li><span>Wind Speed:</span> <span id="wind">12</span> km/h</li>
+        <li><span>Condition:</span> Partly Cloudy</li>
+        <li><span>Wind Chill:</span> <span id="windchill"></span></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Raul Moroni Capcha Cadillo | Machu Picchu - Peru</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+</body>
+</html>
