@@ -1,0 +1,37 @@
+/* Color Scheme & Typography */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcf5e5;
+    color: #2a2a2a;
+    padding: 20px;
+    line-height: 1.7;
+}
+
+h1, h2 {
+    font-family: Georgia, serif;
+    color: #2a4d37;
+}
+
+.color-box {
+    width: 120px;
+    height: 25px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.dark-green {
+    background-color: #2a4d37;
+}
+
+.light-beige {
+    background-color: #fcf5e5;
+}
+
+pre {
+    background: #ffffff;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    overflow-x: auto;
+}
