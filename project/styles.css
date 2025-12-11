@@ -1,0 +1,58 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #F2E8CF;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #0B3D2E;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Card style sections */
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* Images */
+.wireframe {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    background-color: #0B3D2E;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
